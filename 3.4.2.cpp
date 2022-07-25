@@ -34,7 +34,7 @@ void sort(Address * addresses, int &N, ofstream& FFF) {
 		for (int j = i + 1; j < N; j++) {
 			string a = addresses[i].get_city();
 			string b = addresses[j].get_city();
-			if(strcmp(a.c_str(),b.c_str())>0){ swap(addresses[i],addresses[j]); }
+			if(a>b){ swap(addresses[i], addresses[j]); }
 		}
 	}
 }
